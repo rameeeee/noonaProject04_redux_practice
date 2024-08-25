@@ -1,0 +1,42 @@
+html, body, #root {
+    height: 100%;
+}
+
+.wrap {
+    min-width: 375px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.button_wrap {
+    padding: 30px;
+    text-align: center;
+
+    button {
+        outline: none;
+        border: 1px solid #000;
+        background: transparent;
+        padding: 10px 20px;
+        border-radius: 8px;
+        & + button {
+            margin-left: 30px;
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+    }
+}
+
+.img_wrap {
+
+    width: 32px;
+    margin: 0 auto;
+    pointer-events: none;
+    text-align: center;
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
